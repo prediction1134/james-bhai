@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Bhai -India's Oldest Tipper</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '767251045698616');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=767251045698616&ev=PageView&noscript=1"
+    /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            height: 100vh;
+            /* Yahan apni image ka link ya file name daalein */
+            background-image: url('your-background-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        /* Overlay to make text readable */
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.1); 
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            padding-top: 40px;
+            z-index: 5;
+        }
+
+        .badge { font-size: 13px; color: #fff; font-weight: bold; }
+        .main-title { font-size: 26px; color: #fff; margin: 5px 0; text-shadow: 2px 2px 8px #000; }
+        .emoji-red { font-size: 30px; margin-bottom: 10px; }
+
+        .big-text {
+            font-size: 50px;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.7);
+            line-height: 1;
+            margin-top: 10px;
+        }
+
+        .analyst { font-size: 24px; color: #111; font-weight: 800; margin-bottom: 25px; }
+
+        .tg-box {
+            background-color: #3e12c1;
+            width: 125px;
+            height: 125px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .tg-box i { font-size: 85px; color: #fff; }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #3e12c1;
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 6px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .footer-text { margin-top: 40px; }
+        .fav-tipper { font-size: 20px; color: #000; font-weight: 900; }
+        .timer { font-size: 24px; color: #fff; font-weight: bold; margin-top: 5px; }
+        #clock { color: #ff0000; }
+
+        .bottom-strip {
+            background-color: rgba(0,0,0,0.5);
+            color: #ccc;
+            padding: 12px;
+            font-size: 13px;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="overlay"></div>
+        
+        <div class="content">
+            <p class="badge">💯 INDIA'S OLDEST TIPPER 💯</p>
+            <h1 class="main-title">James Bhai</h1>
+            <p class="emoji-red">💯</p>
+
+            <div class="big-text">JAMES BHAI (Analyst)</div>
+            <p class="analyst">The Best Analyst</p>
+
+            <div class="tg-box">
+                <i class="fab fa-telegram"></i>
+            </div>
+
+            <a href="https://t.me/+3qFJvDLUjvBlYmQ1" class="join-btn">
+                Join The Original James Bhai <i class="fab fa-telegram-plane"></i>
+            </a>
+
+            <div class="footer-text">
+                <p class="fav-tipper">NO1 PLAYER'S FAVOURITE TIPPER</p>
+                <p class="timer">FREE JOINING ENDS IN... <span id="clock">59</span></p>
+            </div>
+        </div>
+
+        <div class="bottom-strip">
+            Join The Original James Bhai
+        </div>
+    </div>
+
+    <script>
+        let timeLeft = 59;
+        const clock = document.getElementById('clock');
+        setInterval(() => {
+            if(timeLeft > 0) {
+                timeLeft--;
+                clock.textContent = timeLeft;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
