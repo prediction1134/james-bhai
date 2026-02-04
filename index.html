@@ -43,7 +43,6 @@
             width: 100%;
             max-width: 450px;
             height: 100vh;
-            /* Yahan apni image ka link ya file name daalein */
             background-image: url('https://raw.githubusercontent.com/prediction1134/james-bhai/c5ed0d1e6d995af4a4b41335bcf1c18f1b1cb293/jamess.jpg'); 
             background-size: cover;
             background-position: center;
@@ -55,7 +54,6 @@
             overflow: hidden;
         }
 
-        /* Overlay to make text readable */
         .overlay {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -125,6 +123,21 @@
             padding: 12px;
             font-size: 13px;
             z-index: 5;
+            text-align: left; /* Keep default text left */
+            position: relative;
+        }
+
+        /* Setup By Style */
+        .setup-tag {
+            position: absolute;
+            right: 10px;
+            bottom: 12px;
+            font-size: 11px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px #000;
+            opacity: 0.8;
+            font-family: sans-serif;
         }
     </style>
 </head>
@@ -157,6 +170,7 @@
 
         <div class="bottom-strip">
             Join The Original James Bhai
+            <span class="setup-tag">Setup By @addukan1</span>
         </div>
     </div>
 
